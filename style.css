@@ -475,3 +475,34 @@ textarea#code:focus{ border-color: color-mix(in oklab, var(--accent) 55%, var(--
   color: #0b1220;
   border-color: #f59e0b;
 }
+
+
+/* Mobile layout */
+@media (max-width: 1023px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -280px;
+    top: 0;
+    height: 100vh;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+}
+
+
+/* v3.5 toggleNav visibility
+   Hide hamburger on desktop, show only on mobile (sidebar becomes drawer). */
+#toggleNav{ display:none; }
+
+@media (max-width: 980px){
+  #toggleNav{ display:grid; }
+}
