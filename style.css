@@ -7,7 +7,7 @@
   --text: #eaf1ff;
   --muted: rgba(234,241,255,.72);
   --muted2: rgba(234,241,255,.55);
-  --accent: #7dd3fc;
+  --accent: #2563EB;
   --good: #86efac;
   --warn: #fde047;
   --bad: #fb7185;
@@ -505,4 +505,39 @@ textarea#code:focus{ border-color: color-mix(in oklab, var(--accent) 55%, var(--
 
 @media (max-width: 980px){
   #toggleNav{ display:grid; }
+}
+
+
+/* =========================
+   v3.7 week visual hierarchy
+   ========================= */
+
+/* Make primary week header visually distinct */
+.moduleHeader {
+  background: #dff5ff;           /* updated light blue */
+  color: #0B1220;
+  border-color: #2563EB;
+  font-weight: 800;
+}
+
+/* Dark mode adjustment */
+[data-theme="dark"] .moduleHeader {
+  background: #0790df;           /* updated dark blue */
+  color: #FFFFFF;
+  border-color: #1E3A8A;
+}
+
+/* Keep day items darker for hierarchy contrast */
+.dayItem {
+  background: var(--panel);
+}
+
+/* =========================
+   v3.13 aboutTitle theme colors (accessibility)
+   ========================= */
+:root[data-theme="light"] .aboutTitle{
+  color: #2563EB !important; /* darker blue on white */
+}
+:root[data-theme="dark"] .aboutTitle{
+  color: #7DD3FC !important; /* lighter blue on dark */
 }

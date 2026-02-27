@@ -619,6 +619,21 @@ function loadCourse(){
 
 async function main(){
   loadCourse();
+  // v3.14 sidebar default expansion: Week 1 open, Week 2-4 closed (on each load)
+  try {
+    localStorage.setItem("pybootcamp_modules_expanded_v3_1", JSON.stringify({"0": true, "1": false, "2": false, "3": false}));
+  } catch (e) {}
+
+  // v3.13 ensure week1 expanded default (first run only)
+  const __expandedKey = "pybootcamp_modules_expanded_v3_1";
+  try {
+    const cur = JSON.parse(localStorage.getItem(__expandedKey) || "null");
+    if(!cur || Object.keys(cur).length === 0){
+      localStorage.setItem(__expandedKey, JSON.stringify({"0": true, "1": false, "2": false, "3": false}));
+    }
+  } catch {
+    localStorage.setItem(__expandedKey, JSON.stringify({"0": true, "1": false, "2": false, "3": false}));
+  }
 
   lang = localStorage.getItem(LANG_KEY) || "en";
   const theme = localStorage.getItem(THEME_KEY) || "dark";
