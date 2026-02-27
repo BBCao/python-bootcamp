@@ -1,21 +1,10 @@
-# Python Bootcamp v2 (Modern UI)
+# Python Bootcamp v3
 
-This is a single-page learning app you can host on GitHub Pages.
+Adds:
+- Working tabs
+- Practice: Insert Hello + Code Preview snapshot
+- Quiz: 5 questions + Submit Answers + score
+- Notes: rich text toolbar + image insert + import + save (local)
+- Brief for every lesson + short Python intro on Day 1
 
-## Files
-- index.html
-- style.css
-- app.js
-
-## Deploy
-1. Upload files to repo root
-2. Settings → Pages → Deploy from branch → main / (root)
-
-## Features
-- Beautiful modern UI
-- Mobile friendly + slide-in navigation
-- Learn / Practice / Quiz / Notes tabs
-- Run Python in browser (Pyodide)
-- Progress + streak tracking (stored locally)
-- English-first with Chinese toggle
-- Dark/Light theme toggle
+Deploy: replace files in repo root and refresh GitHub Pages.

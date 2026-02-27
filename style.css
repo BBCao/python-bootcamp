@@ -18,7 +18,7 @@
 }
 
 [data-theme="light"]{
-  --bg: #f6f8ff;
+  --bg: #ffffff;
   --panel: rgba(0,0,0,.04);
   --panel2: rgba(0,0,0,.06);
   --border: rgba(0,0,0,.10);
@@ -34,10 +34,7 @@ body{
   margin:0;
   font-family: var(--sans);
   color: var(--text);
-  background:
-    radial-gradient(900px 520px at 18% 8%, rgba(125,211,252,.18), transparent 55%),
-    radial-gradient(780px 460px at 88% 0%, rgba(134,239,172,.14), transparent 50%),
-    var(--bg);
+  background: var(--bg);
 }
 
 a{ color: inherit; }
@@ -357,4 +354,124 @@ textarea#code:focus{ border-color: color-mix(in oklab, var(--accent) 55%, var(--
   .nav.open{ transform: translateX(0); }
   .main{ padding: 14px; }
   .heroTitle{ font-size: 24px; }
+}
+
+/* v3 additions */
+.practiceGrid{ display:grid; grid-template-columns: 1.35fr .65fr; gap: 14px; align-items:start; }
+.previewCard{ border-radius: 16px; border: 1px solid var(--border); background: color-mix(in oklab, var(--panel2) 60%, transparent); padding: 12px; }
+@media (max-width: 980px){ .practiceGrid{ grid-template-columns: 1fr; } }
+
+.brief{ padding: 12px 12px; border-radius: 14px; border: 1px solid var(--border); background: color-mix(in oklab, var(--panel2) 60%, transparent); color: var(--muted); margin-bottom: 12px; line-height: 1.6; }
+.cardInner{ padding: 12px; border-radius: 16px; border: 1px dashed color-mix(in oklab, var(--accent) 35%, var(--border)); background: color-mix(in oklab, var(--panel2) 70%, transparent); margin-bottom: 12px; }
+.aboutTitle{ font-size: 12px; font-weight: 900; color: var(--accent); margin-bottom: 6px; }
+.aboutBody{ font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+.notesToolbar{
+  display:flex; flex-wrap:wrap; gap:8px; align-items:center;
+  padding: 10px; border-radius: 16px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--panel2) 60%, transparent);
+  margin-bottom: 10px;
+}
+.toolBtn{
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  cursor:pointer;
+  display:flex; align-items:center; gap:8px;
+  font-size: 13px;
+}
+.toolBtn:hover{ border-color: color-mix(in oklab, var(--accent) 35%, var(--border)); }
+.toolBtn.danger:hover{ border-color: color-mix(in oklab, var(--bad) 45%, var(--border)); }
+.toolSep{ width: 1px; height: 22px; background: var(--border); margin: 0 2px; }
+.toolSelect{
+  height: 34px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  padding: 0 10px;
+}
+.toolColor{ width: 40px; height: 34px; padding: 0; border-radius: 12px; border: 1px solid var(--border); background: var(--panel); }
+.notesEditor{
+  min-height: 320px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg) 72%, transparent);
+  padding: 12px;
+  outline: none;
+  line-height: 1.7;
+}
+.notesEditor:focus{ border-color: color-mix(in oklab, var(--accent) 55%, var(--border)); }
+.notesEditor img{ max-width: 100%; border-radius: 12px; border: 1px solid var(--border); }
+
+/* v3.1 accessibility fixes */
+.chipSelect select{
+  color: var(--text);
+  background: transparent;
+}
+.chipSelect select option{
+  color: #111827; /* darker gray */
+  background: #ffffff;
+}
+[data-theme="dark"] .chipSelect select option{
+  color: #eaf1ff;
+  background: #0b1220;
+}
+
+/* module accordion */
+.moduleAcc{ display:flex; flex-direction:column; gap:10px; }
+.moduleHeader{
+  width:100%;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--panel2);
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  color: var(--text);
+  font-weight: 900;
+}
+.moduleHeader:hover{ border-color: color-mix(in oklab, var(--accent) 35%, var(--border)); }
+.moduleHeaderTitle{ font-size: 13px; text-align:left; }
+.moduleArrow{ opacity:.85; font-size: 14px; }
+.moduleDays{ display:flex; flex-direction:column; gap:10px; margin-top: -2px; }
+
+/* quiz radio style */
+.quizQBlock{ margin-bottom: 14px; }
+.quizRadioGroup{ display:flex; flex-direction:column; gap:10px; margin-top: 10px; }
+.quizRadio{
+  display:flex; gap:10px; align-items:flex-start;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  cursor:pointer;
+}
+.quizRadio input{ margin-top: 3px; }
+.quizRadio:hover{ border-color: color-mix(in oklab, var(--accent) 35%, var(--border)); }
+.quizRadio.correct{ border-color: color-mix(in oklab, var(--good) 55%, var(--border)); }
+.quizRadio.wrong{ border-color: color-mix(in oklab, var(--bad) 55%, var(--border)); }
+.quizRadioText{ line-height: 1.5; }
+
+.bulbIcon{ margin-right: 8px; }
+.hintTitle{ display:flex; align-items:center; gap:8px; }
+
+/* v3.3 accessibility Today badge fix */
+[data-theme="light"] .badge.today{
+  background: #2563eb; /* accessible blue */
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+[data-theme="dark"] .badge.today{
+  background: #f59e0b; /* amber for dark mode */
+  color: #0b1220;
+  border-color: #f59e0b;
 }
