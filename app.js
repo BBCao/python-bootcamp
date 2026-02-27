@@ -190,7 +190,7 @@ function renderModuleAccordion(){
       left.className = "dayLeft";
       const name = document.createElement("div");
       name.className = "dayName";
-      name.textContent = `${n}. ${day.title[lang]}`;
+      name.textContent = `${day.title[lang]}`;
       const desc = document.createElement("div");
       desc.className = "dayDesc";
       desc.textContent = day.time[lang];
