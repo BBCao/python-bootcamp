@@ -541,3 +541,16 @@ textarea#code:focus{ border-color: color-mix(in oklab, var(--accent) 55%, var(--
 :root[data-theme="dark"] .aboutTitle{
   color: #7DD3FC !important; /* lighter blue on dark */
 }
+
+
+/* =========================
+   v3.17 Footer
+   ========================= */
+.appFooter{
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 13px;
+  opacity: 0.7;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}

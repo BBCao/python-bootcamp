@@ -16,7 +16,7 @@ const i18n = {
     loadingPy: "⏳ Loading Python…", readyPy: "✅ Python ready", running: "🏃 Running…",
     copied: "✅ Copied!", copyFail: "Copy failed. Please select & copy manually.",
     confirmReset: "Reset EVERYTHING (progress, notes, streak)?",
-    footer1: "Upload this folder to GitHub Pages to learn anywhere.",
+    footer1: "",
     footer2: "Progress is stored locally in your browser.",
     todayBadge: "Today",
     tabLearn: "Learn", tabPractice: "Practice", tabQuiz: "Quiz", tabNotes: "Notes",
