@@ -1,21 +1,27 @@
-# Python Bootcamp v2 (Modern UI)
+# Python 30-Day Bootcamp (Friendly Mentor) — Web App
 
-This is a single-page learning app you can host on GitHub Pages.
+✅ English-first with Chinese toggle  
+✅ 30 days + modules + homework + quiz  
+✅ Run Python in the browser (Pyodide)  
+✅ Progress tracking + streak tracking  
+✅ Notes + saved code per day (saved on your device browser)
 
-## Files
-- index.html
-- style.css
-- app.js
+## Deploy to GitHub Pages (recommended)
+1. Create a GitHub repo (e.g. `python-30day-bootcamp`)
+2. Upload these files to the repo root:
+   - index.html
+   - style.css
+   - app.js
+   - README.md
+3. Repo Settings → Pages
+4. Source: Deploy from a branch → Branch: main / (root)
+5. Your site URL will appear. Open it on any device.
 
-## Deploy
-1. Upload files to repo root
-2. Settings → Pages → Deploy from branch → main / (root)
+## How to use
+- Click **Start today**
+- Click **Today**
+- Read concept, run code, do homework, answer quiz
+- Click **Mark done**
 
-## Features
-- Beautiful modern UI
-- Mobile friendly + slide-in navigation
-- Learn / Practice / Quiz / Notes tabs
-- Run Python in browser (Pyodide)
-- Progress + streak tracking (stored locally)
-- English-first with Chinese toggle
-- Dark/Light theme toggle
+## Notes about progress
+Progress is saved in your browser (localStorage). Different devices won’t automatically sync.

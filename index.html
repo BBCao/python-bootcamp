@@ -3,146 +3,113 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Python Bootcamp</title>
-  <meta name="color-scheme" content="dark light">
+  <title>Python 30-Day Bootcamp</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
   <script id="course-data" type="application/json">{"meta": {"name": {"en": "Python Beginner Bootcamp (30 Days)", "zh": "Python 零基础训练营（30天）"}, "mode": {"en": "Friendly Mentor", "zh": "温和陪跑"}, "daily_time": {"en": "1 hour/day", "zh": "每天 1 小时"}}, "modules": [{"id": "m1", "title": {"en": "Week 1 — Getting Started", "zh": "第1周—起步"}, "days": [1, 2, 3, 4, 5, 6, 7]}, {"id": "m2", "title": {"en": "Week 2 — Logic & Loops", "zh": "第2周—逻辑与循环"}, "days": [8, 9, 10, 11, 12, 13, 14]}, {"id": "m3", "title": {"en": "Week 3 — Data & Functions", "zh": "第3周—数据与函数"}, "days": [15, 16, 17, 18, 19, 20, 21]}, {"id": "m4", "title": {"en": "Week 4 — Projects & Skills", "zh": "第4周—项目与技能"}, "days": [22, 23, 24, 25, 26, 27, 28, 29, 30]}], "days": [{"title": {"en": "Day 1: Hello, Python (print)", "zh": "第1天：你好，Python（print）"}, "concept": {"en": "Python lets you tell the computer what to do. `print()` shows text on the screen.\n\nRun the code, then change the words.", "zh": "Python 是“告诉电脑做什么”的语言。`print()` 用来把文字显示出来。\n\n先运行，再把文字改成你自己的。"}, "starter": {"en": "print(\"Hello, world!\")\nprint(\"I am learning Python.\")\nprint(\"I will practice every day.\")\n", "zh": "print(\"你好，世界！\")\nprint(\"我正在学习 Python。\")\nprint(\"我会每天练习。\")\n"}, "homework": {"en": ["Write 5 different print() lines about you.", "Change the text and run again."], "zh": ["写 5 行不同的 print() 来介绍你自己。", "把文字改一改，再运行一次。"]}, "quiz": {"q": {"en": "What does print() do?", "zh": "print() 是用来做什么的？"}, "options": {"en": ["Deletes text", "Shows output on the screen", "Creates a loop", "Installs Python"], "zh": ["删除文字", "把输出显示到屏幕", "创建循环", "安装 Python"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 2: Variables", "zh": "第2天：变量"}, "concept": {"en": "A variable is a named box for a value. Example: `name = \"Alex\"`.\n\nTip: numbers don’t need quotes.", "zh": "变量像一个带名字的盒子，用来装值。例如：`name = \"小明\"`。\n\n提示：数字不需要引号。"}, "starter": {"en": "name = \"Alex\"\nage = 18\nprint(name)\nprint(age)\nprint(f\"My name is {name}, age {age}.\")\n", "zh": "name = \"小明\"\nage = 18\nprint(name)\nprint(age)\nprint(f\"我叫 {name}，今年 {age} 岁。\")\n"}, "homework": {"en": ["Create variables: city, hobby, favorite_food. Print them.", "Use an f-string with at least 2 variables."], "zh": ["创建变量：city、hobby、favorite_food，并打印。", "用 f-string 拼接至少 2 个变量。"]}, "quiz": {"q": {"en": "Which is a valid variable name?", "zh": "哪个是合法变量名？"}, "options": {"en": ["1name", "name_1", "name-1", "name 1"], "zh": ["1name", "name_1", "name-1", "name 1"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 3: Input (ask the user)", "zh": "第3天：输入（问用户）"}, "concept": {"en": "`input()` asks the user for text.\nIf you want a number: `int(input(...))`.", "zh": "`input()` 可以向用户提问并获取输入。\n如果要数字：`int(input(...))`。"}, "starter": {"en": "name = input(\"What is your name? \")\nprint(f\"Nice to meet you, {name}!\")\n", "zh": "name = input(\"你叫什么名字？ \")\nprint(f\"很高兴认识你，{name}！\")\n"}, "homework": {"en": ["Ask 2 questions (name + hobby) and print a friendly reply.", "Try converting one input to int (e.g., age)."], "zh": ["问 2 个问题（名字 + 爱好），并友好回复。", "把一个输入转成 int（例如年龄）。"]}, "quiz": {"q": {"en": "input() returns...", "zh": "input() 返回的是..."}, "options": {"en": ["A number", "A string (text)", "A file", "A loop"], "zh": ["数字", "字符串（文字）", "文件", "循环"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 4: Data types", "zh": "第4天：数据类型"}, "concept": {"en": "Common types: string (text), int (whole number), float (decimal).\nUse `type(x)` to check.", "zh": "常见类型：字符串、整数、小数。用 `type(x)` 查看类型。"}, "starter": {"en": "x = \"hi\"\ny = 10\nz = 3.14\nprint(type(x))\nprint(type(y))\nprint(type(z))\n", "zh": "x = \"你好\"\ny = 10\nz = 3.14\nprint(type(x))\nprint(type(y))\nprint(type(z))\n"}, "homework": {"en": ["Create 1 string, 1 int, 1 float. Print type() of each.", "Convert string number to int: int('123')."], "zh": ["创建 1 个字符串/整数/小数，打印 type()。", "把字符串数字转 int：int('123')。"]}, "quiz": {"q": {"en": "Which is a float?", "zh": "哪个是 float（小数）？"}, "options": {"en": ["'3.14'", "3.14", "3", "'3'"], "zh": ["'3.14'", "3.14", "3", "'3'"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 5: Math operators", "zh": "第5天：运算符"}, "concept": {"en": "Use + - * / for math. Use // for integer division and % for remainder.", "zh": "用 + - * / 计算。// 整除，% 取余。"}, "starter": {"en": "a = 10\nb = 3\nprint(a + b)\nprint(a / b)\nprint(a // b)\nprint(a % b)\n", "zh": "a = 10\nb = 3\nprint(a + b)\nprint(a / b)\nprint(a // b)\nprint(a % b)\n"}, "homework": {"en": ["Compute: (25 + 7) * 2", "Check if 17 is odd using %."], "zh": ["计算：(25 + 7) * 2", "用 % 判断 17 是否为奇数。"]}, "quiz": {"q": {"en": "What does % return?", "zh": "% 返回什么？"}, "options": {"en": ["Power", "Remainder", "Square root", "Random"], "zh": ["幂", "余数", "平方根", "随机数"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 6: If / else", "zh": "第6天：if / else"}, "concept": {"en": "Use `if` to make decisions. Remember indentation (4 spaces).", "zh": "用 `if` 做判断。注意缩进（通常 4 个空格）。"}, "starter": {"en": "age = int(input(\"Age? \"))\nif age >= 18:\n    print(\"Adult\")\nelse:\n    print(\"Under 18\")\n", "zh": "age = int(input(\"你几岁？ \"))\nif age >= 18:\n    print(\"成年人\")\nelse:\n    print(\"未成年人\")\n"}, "homework": {"en": ["Write: if score >= 60 print 'pass' else 'try again'.", "Test with different scores."], "zh": ["写：score>=60 输出“及格”，否则“再努力”。", "用不同分数测试。"]}, "quiz": {"q": {"en": "Code blocks are controlled by...", "zh": "Python 里代码块由什么控制？"}, "options": {"en": ["Curly braces {}", "Indentation (spaces)", "Semicolons ;", "Commas ,"], "zh": ["大括号 {}", "缩进（空格）", "分号 ;", "逗号 ,"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 7: Mini Project — Intro Card", "zh": "第7天：小项目—个人名片"}, "concept": {"en": "Ask 3 questions and print a nice profile card.", "zh": "问 3 个问题并打印一张好看的个人名片。"}, "starter": {"en": "name = input(\"Name: \")\ncity = input(\"City: \")\ngoal = input(\"Goal: \")\nprint(\"\\n=== PROFILE CARD ===\")\nprint(f\"Name: {name}\")\nprint(f\"City: {city}\")\nprint(f\"Goal: {goal}\")\n", "zh": "name = input(\"名字：\")\ncity = input(\"城市：\")\ngoal = input(\"目标：\")\nprint(\"\\n=== 个人名片 ===\")\nprint(f\"名字：{name}\")\nprint(f\"城市：{city}\")\nprint(f\"目标：{goal}\")\n"}, "homework": {"en": ["Add 1 more field (e.g., hobby).", "Make your output look nice (use lines, titles)."], "zh": ["再加 1 个字段（比如爱好）。", "让输出更好看（标题/分隔线）。"]}, "quiz": {"q": {"en": "Which function asks the user for input?", "zh": "用哪个函数获取用户输入？"}, "options": {"en": ["print()", "input()", "type()", "range()"], "zh": ["print()", "input()", "type()", "range()"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 8: Comparison & logic", "zh": "第8天：比较与逻辑"}, "concept": {"en": "Comparisons: == != > < >= <=. Logic: and / or / not.", "zh": "比较：== != > < >= <=。逻辑：and / or / not。"}, "starter": {"en": "a = 5\nb = 7\nprint(a < b)\nprint(a == 5 and b == 7)\nprint(not (a > b))\n", "zh": "a = 5\nb = 7\nprint(a < b)\nprint(a == 5 and b == 7)\nprint(not (a > b))\n"}, "homework": {"en": ["Ask age and check 18–60 => 'working age', else 'other'.", "Use and/or at least once."], "zh": ["输入年龄判断 18–60 为“工作年龄”，否则“其他”。", "至少用一次 and/or。"]}, "quiz": {"q": {"en": "Which operator means equal?", "zh": "哪个符号表示相等？"}, "options": {"en": ["=", "==", "!=", "<="], "zh": ["=", "==", "!=", "<="]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 9: elif", "zh": "第9天：elif"}, "concept": {"en": "Use `elif` for multiple cases.", "zh": "用 `elif` 处理多种情况。"}, "starter": {"en": "score = int(input(\"Score: \"))\nif score >= 90:\n    print(\"A\")\nelif score >= 80:\n    print(\"B\")\nelif score >= 70:\n    print(\"C\")\nelse:\n    print(\"D\")\n", "zh": "score = int(input(\"分数：\"))\nif score >= 90:\n    print(\"A\")\nelif score >= 80:\n    print(\"B\")\nelif score >= 70:\n    print(\"C\")\nelse:\n    print(\"D\")\n"}, "homework": {"en": ["Make a temperature advisor: <10 cold, 10–25 nice, >25 hot.", "Test 3 values."], "zh": ["做温度建议：<10 冷，10–25 舒适，>25 热。", "测试 3 个值。"]}, "quiz": {"q": {"en": "elif is used when you have...", "zh": "elif 适用于..."}, "options": {"en": ["Only one rule", "Multiple rules", "Only loops", "Only math"], "zh": ["只有一条规则", "多条规则", "只有循环", "只有数学"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 10: for loop + range", "zh": "第10天：for + range"}, "concept": {"en": "`for` repeats work. `range(n)` gives 0..n-1.", "zh": "`for` 用来重复。`range(n)` 产生 0..n-1。"}, "starter": {"en": "for i in range(5):\n    print(\"i =\", i)\n", "zh": "for i in range(5):\n    print(\"i =\", i)\n"}, "homework": {"en": ["Print 1..5 using range(1, 6).", "Print 'Hello' 3 times."], "zh": ["用 range(1, 6) 输出 1..5。", "打印 3 次 Hello。"]}, "quiz": {"q": {"en": "range(5) produces:", "zh": "range(5) 产生："}, "options": {"en": ["1..5", "0..4", "0..5", "5..0"], "zh": ["1..5", "0..4", "0..5", "5..0"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 11: while loop", "zh": "第11天：while"}, "concept": {"en": "`while` repeats while a condition is true.", "zh": "`while` 在条件为真时循环。"}, "starter": {"en": "count = 0\nwhile count < 3:\n    print(\"count =\", count)\n    count += 1\n", "zh": "count = 0\nwhile count < 3:\n    print(\"count =\", count)\n    count += 1\n"}, "homework": {"en": ["Make a countdown from 5 to 1 using while.", "After loop, print 'Done'."], "zh": ["用 while 做 5 到 1 倒计时。", "循环后打印 Done。"]}, "quiz": {"q": {"en": "Best when you don't know repeats?", "zh": "不知道循环次数时更适合？"}, "options": {"en": ["for", "while", "print", "input"], "zh": ["for", "while", "print", "input"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 12: break & continue", "zh": "第12天：break/continue"}, "concept": {"en": "`break` stops the loop. `continue` skips to next iteration.", "zh": "`break` 结束循环。`continue` 跳过本次继续下次。"}, "starter": {"en": "for i in range(10):\n    if i == 5:\n        break\n    print(i)\n", "zh": "for i in range(10):\n    if i == 5:\n        break\n    print(i)\n"}, "homework": {"en": ["Loop 1..10, skip 3 and stop at 8. Use continue + break."], "zh": ["循环 1..10，跳过 3，在 8 停止。用 continue + break。"]}, "quiz": {"q": {"en": "continue does what?", "zh": "continue 的作用？"}, "options": {"en": ["Ends program", "Skips current step", "Prints output", "Creates variable"], "zh": ["结束程序", "跳过本次循环", "打印输出", "创建变量"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 13: Loop practice", "zh": "第13天：循环练习"}, "concept": {"en": "Use loops to build simple patterns.", "zh": "用循环输出简单图案。"}, "starter": {"en": "for i in range(1, 6):\n    print(\"*\" * i)\n", "zh": "for i in range(1, 6):\n    print(\"*\" * i)\n"}, "homework": {"en": ["Print a triangle of 7 rows.", "Print 2,4,6,8,10 using a loop."], "zh": ["打印 7 行三角形。", "用循环输出 2,4,6,8,10。"]}, "quiz": {"q": {"en": "What does '*' * 3 produce?", "zh": "'*' * 3 得到？"}, "options": {"en": ["***", "*3", "Error", "3*"], "zh": ["***", "*3", "报错", "3*"]}, "answer": 0}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 14: Mini Project — Guess Number", "zh": "第14天：小项目—猜数字"}, "concept": {"en": "Build a guessing game. Improve it with hints later.", "zh": "做一个猜数字游戏，后续加提示。"}, "starter": {"en": "secret = 7\nwhile True:\n    guess = int(input(\"Guess (1-10): \"))\n    if guess == secret:\n        print(\"✅ Correct!\")\n        break\n    else:\n        print(\"Nope, try again.\")\n", "zh": "secret = 7\nwhile True:\n    guess = int(input(\"猜数字(1-10)：\"))\n    if guess == secret:\n        print(\"✅ 猜对了！\")\n        break\n    else:\n        print(\"不对，再试试。\")\n"}, "homework": {"en": ["Change secret number.", "Add hint: too high / too low."], "zh": ["换一个 secret 数字。", "加提示：猜大了/猜小了。"]}, "quiz": {"q": {"en": "Which keyword exits a loop early?", "zh": "哪个关键字提前退出循环？"}, "options": {"en": ["stop", "break", "exit()", "done"], "zh": ["stop", "break", "exit()", "done"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 15: Lists", "zh": "第15天：列表"}, "concept": {"en": "A list stores multiple items: `nums = [1,2,3]`. Index starts at 0.", "zh": "列表存多个元素：`nums=[1,2,3]`。下标从 0 开始。"}, "starter": {"en": "nums = [10, 20, 30]\nprint(nums)\nprint(nums[0])\n", "zh": "nums = [10, 20, 30]\nprint(nums)\nprint(nums[0])\n"}, "homework": {"en": ["Create a list of 5 foods. Print first and last.", "Change one item and print again."], "zh": ["创建 5 个食物的列表，打印第一个和最后一个。", "修改一个元素再打印。"]}, "quiz": {"q": {"en": "List index starts at...", "zh": "列表下标从...开始？"}, "options": {"en": ["0", "1", "-1", "It depends"], "zh": ["0", "1", "-1", "看情况"]}, "answer": 0}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 16: List operations", "zh": "第16天：列表操作"}, "concept": {"en": "Use append, len, and loops over a list.", "zh": "使用 append、len、遍历列表。"}, "starter": {"en": "items = []\nitems.append(\"apple\")\nitems.append(\"banana\")\nprint(items)\nprint(\"count =\", len(items))\nfor x in items:\n    print(\"item:\", x)\n", "zh": "items = []\nitems.append(\"苹果\")\nitems.append(\"香蕉\")\nprint(items)\nprint(\"数量 =\", len(items))\nfor x in items:\n    print(\"元素：\", x)\n"}, "homework": {"en": ["Make a list of 5 numbers. Print each *2.", "Compute sum using a loop."], "zh": ["做 5 个数字列表，循环打印每个*2。", "用循环求和并打印。"]}, "quiz": {"q": {"en": "len(list) returns...", "zh": "len(列表) 返回..."}, "options": {"en": ["Last item", "Number of items", "First item", "Random number"], "zh": ["最后一个元素", "元素数量", "第一个元素", "随机数"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 17: Dictionaries", "zh": "第17天：字典"}, "concept": {"en": "A dict stores key-value pairs: `person={'name':'A'}`.", "zh": "字典存键值对：`person={'name':'A'}`。"}, "starter": {"en": "person = {'name': 'Alex', 'age': 18}\nprint(person['name'])\nperson['city'] = 'NYC'\nprint(person)\n", "zh": "person = {'name': '小明', 'age': 18}\nprint(person['name'])\nperson['city'] = '北京'\nprint(person)\n"}, "homework": {"en": ["Make a dict for a book: title, author, year. Print values.", "Update year and print again."], "zh": ["做一本书的字典：title/author/year，打印值。", "修改 year 再打印。"]}, "quiz": {"q": {"en": "A dictionary maps...", "zh": "字典映射..."}, "options": {"en": ["index → value", "key → value", "file → folder", "loop → output"], "zh": ["下标→值", "键→值", "文件→文件夹", "循环→输出"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 18: Strings", "zh": "第18天：字符串"}, "concept": {"en": "Useful: lower(), upper(), split(), len().", "zh": "常用：lower()/upper()/split()/len()。"}, "starter": {"en": "text = \"Hello Python\"\nprint(text.lower())\nprint(text.upper())\nprint(text.split())\nprint(len(text))\n", "zh": "text = \"你好 Python\"\nprint(text.lower())\nprint(text.upper())\nprint(text.split())\nprint(len(text))\n"}, "homework": {"en": ["Ask for a sentence, print word count (split+len).", "Print the sentence in uppercase."], "zh": ["输入一句话，打印单词数（split+len）。", "把句子变成大写再打印。"]}, "quiz": {"q": {"en": "split() usually returns...", "zh": "split() 通常返回..."}, "options": {"en": ["A number", "A list of parts", "A dict", "Nothing"], "zh": ["数字", "分割后的列表", "字典", "什么也不返回"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 19: Functions", "zh": "第19天：函数"}, "concept": {"en": "Functions reuse code: `def greet(name): ...`.", "zh": "函数用来复用代码：`def greet(name): ...`。"}, "starter": {"en": "def greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Alex\")\ngreet(\"Sam\")\n", "zh": "def greet(name):\n    print(f\"你好，{name}！\")\n\ngreet(\"小明\")\ngreet(\"小红\")\n"}, "homework": {"en": ["Write add(a,b) that returns a+b. Print result.", "Write a function that prints a motivational line."], "zh": ["写 add(a,b) 返回 a+b 并打印。", "写一个函数打印鼓励的话。"]}, "quiz": {"q": {"en": "Which keyword defines a function?", "zh": "定义函数用哪个关键字？"}, "options": {"en": ["func", "def", "function", "lambda"], "zh": ["func", "def", "function", "lambda"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 20: return practice", "zh": "第20天：return 练习"}, "concept": {"en": "`return` sends a value back. Without return, result is None.", "zh": "`return` 把值返回。没有 return 默认返回 None。"}, "starter": {"en": "def square(x):\n    return x * x\n\nprint(square(5))\n", "zh": "def square(x):\n    return x * x\n\nprint(square(5))\n"}, "homework": {"en": ["Make is_even(n) returns True/False. Test 3 numbers."], "zh": ["写 is_even(n) 返回 True/False，测试 3 个数字。"]}, "quiz": {"q": {"en": "return is used to...", "zh": "return 用来..."}, "options": {"en": ["Print output", "Exit loop", "Send value back", "Create list"], "zh": ["打印", "退出循环", "返回一个值", "创建列表"]}, "answer": 2}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 21: Mini Project — Contact Book", "zh": "第21天：小项目—通讯录"}, "concept": {"en": "Use a dict to store contacts. Add and find by name.", "zh": "用字典存联系人：添加并按名字查询。"}, "starter": {"en": "contacts = {}\n\nwhile True:\n    cmd = input(\"add / find / quit: \")\n    if cmd == \"add\":\n        name = input(\"name: \")\n        phone = input(\"phone: \")\n        contacts[name] = phone\n        print(\"saved\")\n    elif cmd == \"find\":\n        name = input(\"name: \")\n        print(contacts.get(name, \"not found\"))\n    elif cmd == \"quit\":\n        break\n", "zh": "contacts = {}\n\nwhile True:\n    cmd = input(\"add / find / quit: \")\n    if cmd == \"add\":\n        name = input(\"名字：\")\n        phone = input(\"电话：\")\n        contacts[name] = phone\n        print(\"已保存\")\n    elif cmd == \"find\":\n        name = input(\"名字：\")\n        print(contacts.get(name, \"未找到\"))\n    elif cmd == \"quit\":\n        break\n"}, "homework": {"en": ["Add a command 'list' to print all contacts.", "Make prompts nicer."], "zh": ["增加 list 命令打印所有联系人。", "让提示更友好。"]}, "quiz": {"q": {"en": "dict.get(key, default) is useful because...", "zh": "dict.get(key, default) 有用是因为..."}, "options": {"en": ["It always crashes", "It avoids KeyError when missing", "It sorts keys", "It deletes items"], "zh": ["总会崩溃", "键不存在时不会报错", "会排序键", "会删除元素"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 22: Files (read/write)", "zh": "第22天：文件读写"}, "concept": {"en": "Write text to a file then read it back. (Works best in local Python.)", "zh": "写入文件再读出来。（本地 Python 更适合。）"}, "starter": {"en": "text = \"hello file\"\nwith open(\"note.txt\", \"w\") as f:\n    f.write(text)\n\nwith open(\"note.txt\", \"r\") as f:\n    print(f.read())\n", "zh": "text = \"你好，文件\"\nwith open(\"note.txt\", \"w\") as f:\n    f.write(text)\n\nwith open(\"note.txt\", \"r\") as f:\n    print(f.read())\n"}, "homework": {"en": ["On your computer: write a diary line into a file, then read and print it."], "zh": ["在你电脑本地：写一行日记到文件，再读出来打印。"]}, "quiz": {"q": {"en": "Which mode overwrites a file?", "zh": "哪个模式会覆盖写入文件？"}, "options": {"en": ["r", "w", "a", "x"], "zh": ["r", "w", "a", "x"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 23: Errors (try/except)", "zh": "第23天：错误处理"}, "concept": {"en": "Use try/except to handle errors safely.", "zh": "用 try/except 安全处理错误。"}, "starter": {"en": "try:\n    x = int(input(\"number: \"))\n    print(10 / x)\nexcept ValueError:\n    print(\"Please type a number\")\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\n", "zh": "try:\n    x = int(input(\"输入数字：\"))\n    print(10 / x)\nexcept ValueError:\n    print(\"请输入数字\")\nexcept ZeroDivisionError:\n    print(\"不能除以 0\")\n"}, "homework": {"en": ["Make a safe age input program: keep asking until valid.", "Handle non-number input."], "zh": ["做一个安全输入年龄程序：不合法就继续问。", "处理非数字输入。"]}, "quiz": {"q": {"en": "try/except helps you...", "zh": "try/except 可以..."}, "options": {"en": ["Make code faster", "Avoid crash by handling errors", "Create loops", "Install packages"], "zh": ["让代码更快", "处理错误避免崩溃", "创建循环", "安装包"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 24: Modules (import)", "zh": "第24天：模块 import"}, "concept": {"en": "Modules are code you can import. Example: `import random`.", "zh": "模块是可导入的代码，例如 `import random`。"}, "starter": {"en": "import random\nsecret = random.randint(1, 10)\nprint(secret)\n", "zh": "import random\nsecret = random.randint(1, 10)\nprint(secret)\n"}, "homework": {"en": ["Make your guessing game random with randint.", "Use random.choice to pick from a list."], "zh": ["用 randint 让猜数字随机。", "用 random.choice 从列表选一个。"]}, "quiz": {"q": {"en": "Which statement imports a module?", "zh": "导入模块用哪个语句？"}, "options": {"en": ["include random", "import random", "use random", "module random"], "zh": ["include random", "import random", "use random", "module random"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 25: Code structure", "zh": "第25天：代码结构"}, "concept": {"en": "Improve readability with functions + main loop + clear names.", "zh": "用函数+主循环+清晰命名让代码更易读。"}, "starter": {"en": "def menu():\n    print(\"1) hello\")\n    print(\"2) quit\")\n\nwhile True:\n    menu()\n    c = input(\"> \")\n    if c == \"1\":\n        print(\"hello!\")\n    elif c == \"2\":\n        break\n", "zh": "def menu():\n    print(\"1) 打招呼\")\n    print(\"2) 退出\")\n\nwhile True:\n    menu()\n    c = input(\"> \")\n    if c == \"1\":\n        print(\"你好！\")\n    elif c == \"2\":\n        break\n"}, "homework": {"en": ["Refactor one old program into functions.", "Give functions clear names."], "zh": ["把以前一个程序重构成函数版本。", "函数取清晰名字。"]}, "quiz": {"q": {"en": "Good structure improves...", "zh": "好的结构提升..."}, "options": {"en": ["Only speed", "Readability & reuse", "Internet", "RAM"], "zh": ["只有速度", "可读性与复用", "网速", "内存"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 26: Mini Project — ToDo List", "zh": "第26天：小项目—ToDo"}, "concept": {"en": "Build a CLI ToDo: add/list/done/quit.", "zh": "做一个命令行 ToDo：add/list/done/quit。"}, "starter": {"en": "todos = []\n\nwhile True:\n    cmd = input(\"add/list/done/quit: \")\n    if cmd == \"add\":\n        task = input(\"task: \")\n        todos.append(task)\n    elif cmd == \"list\":\n        for i, t in enumerate(todos):\n            print(i, t)\n    elif cmd == \"done\":\n        idx = int(input(\"index: \"))\n        if 0 <= idx < len(todos):\n            todos.pop(idx)\n    elif cmd == \"quit\":\n        break\n", "zh": "todos = []\n\nwhile True:\n    cmd = input(\"add/list/done/quit: \")\n    if cmd == \"add\":\n        task = input(\"任务：\")\n        todos.append(task)\n    elif cmd == \"list\":\n        for i, t in enumerate(todos):\n            print(i, t)\n    elif cmd == \"done\":\n        idx = int(input(\"完成哪个编号：\"))\n        if 0 <= idx < len(todos):\n            todos.pop(idx)\n    elif cmd == \"quit\":\n        break\n"}, "homework": {"en": ["Add 'clear' command to remove all tasks.", "Show message when index is invalid."], "zh": ["增加 clear 命令清空任务。", "编号不合法时提示。"]}, "quiz": {"q": {"en": "enumerate(list) gives you...", "zh": "enumerate(list) 会给你..."}, "options": {"en": ["Only items", "Index and item", "Only index", "Random order"], "zh": ["只有元素", "下标和元素", "只有下标", "随机顺序"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 27: Review day", "zh": "第27天：复习日"}, "concept": {"en": "Review basics and do 3 small exercises.", "zh": "复习基础并做 3 个小练习。"}, "starter": {"en": "def is_even(n):\n    return n % 2 == 0\n\nfor i in range(1, 11):\n    if is_even(i):\n        print(i, \"even\")\n", "zh": "def is_even(n):\n    return n % 2 == 0\n\nfor i in range(1, 11):\n    if is_even(i):\n        print(i, \"偶数\")\n"}, "homework": {"en": ["Exercise 1: sum 1..100 using loop.", "Exercise 2: count vowels in a string (a,e,i,o,u).", "Exercise 3: list of dicts for 3 people, print names."], "zh": ["练习1：循环求 1..100 和。", "练习2：统计元音数量(a,e,i,o,u)。", "练习3：用字典列表存 3 人并打印名字。"]}, "quiz": {"q": {"en": "Which topic feels hardest right now?", "zh": "你现在觉得最难的是？"}, "options": {"en": ["Variables", "If/else", "Loops", "Lists/Dicts"], "zh": ["变量", "条件判断", "循环", "列表/字典"]}, "answer": 2}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 28: Refactor day", "zh": "第28天：重构日"}, "concept": {"en": "Pick a previous mini project and improve: functions, validation, nicer messages.", "zh": "选择一个旧项目升级：函数化、校验输入、提示更友好。"}, "starter": {"en": "# Pick Day14/21/26 and refactor it.\n# Start by writing: def main(): ...\n", "zh": "# 选择第14/21/26天之一并重构。\n# 从 def main(): ... 开始。\n"}, "homework": {"en": ["Refactor into at least 3 functions.", "Add validation for user inputs."], "zh": ["拆成至少 3 个函数。", "给输入做校验。"]}, "quiz": {"q": {"en": "Refactoring means...", "zh": "重构的意思是..."}, "options": {"en": ["Adding new features only", "Improving code without changing behavior", "Deleting code", "Printing more"], "zh": ["只加新功能", "不改变行为前提下改进代码", "删除代码", "多打印"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 29: Final Project", "zh": "第29天：期末项目"}, "concept": {"en": "Build one mini app you like: budget tracker / habit tracker / quiz game / contact book v2.\nKeep it small and finishable.", "zh": "做一个你喜欢的小应用：记账/习惯打卡/问答游戏/通讯录v2。\n保持小而可完成。"}, "starter": {"en": "# Plan first:\n# 1) features\n# 2) data structure\n# 3) main loop\n", "zh": "# 先写计划：\n# 1) 功能\n# 2) 数据结构\n# 3) 主循环\n"}, "homework": {"en": ["Write a short plan (5–10 lines).", "Implement the core loop + one feature."], "zh": ["写 5–10 行计划。", "实现主循环 + 一个功能。"]}, "quiz": {"q": {"en": "A good final project is...", "zh": "好的期末项目应该..."}, "options": {"en": ["Huge and hard", "Small and finishable", "No code", "Only theory"], "zh": ["越大越好", "小而可完成", "不写代码", "只讲理论"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}, {"title": {"en": "Day 30: Graduation + next steps", "zh": "第30天：毕业 + 下一步"}, "concept": {"en": "Celebrate 🎉 Review what you learned. Pick your next 2-week goal.", "zh": "庆祝 🎉 复盘你学到的。选一个下一阶段 2 周目标。"}, "starter": {"en": "print(\"🎉 I finished 30 days of Python!\")\n", "zh": "print(\"🎉 我完成了 30 天 Python！\")\n"}, "homework": {"en": ["Write a short reflection: what improved, what to learn next.", "Pick your next 2-week goal."], "zh": ["写一段复盘：哪里进步了，接下来学什么。", "定一个下一阶段 2 周目标。"]}, "quiz": {"q": {"en": "What matters most for learning code?", "zh": "学习编程最重要的是？"}, "options": {"en": ["Talent only", "Consistency + practice", "Luck", "Expensive laptop"], "zh": ["只靠天赋", "坚持 + 练习", "运气", "贵电脑"]}, "answer": 1}, "time": {"en": "1 hour", "zh": "1 小时"}}]}</script>
   <script defer src="app.js"></script>
 </head>
 <body>
-  <div class="app" id="app">
-    <header class="topbar">
-      <button class="iconBtn" id="toggleNav" aria-label="Toggle navigation">
-        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
-      </button>
-
-      <div class="brand">
-        <div class="logo">🐍</div>
-        <div class="brandText">
-          <div class="brandTitle" id="appTitle">Python Bootcamp</div>
-          <div class="brandSub" id="appSubtitle">Mentor mode · 1 hour/day</div>
-        </div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">🐍</div>
+      <div>
+        <div class="title" id="appTitle">Python 30-Day Bootcamp</div>
+        <div class="subtitle" id="appSubtitle">Friendly mentor mode · 1 hour/day</div>
       </div>
-
-      <div class="topActions">
-        <button class="chip" id="startToday">Start today</button>
-        <button class="chip" id="goToday">Today</button>
-
-        <label class="chip chipSelect" for="lang">
-          <span class="chipIcon">🌐</span>
-          <select id="lang" aria-label="Language">
-            <option value="en">English</option>
-            <option value="zh">中文</option>
-          </select>
-        </label>
-
-        <button class="chip" id="toggleTheme" title="Toggle theme">🌓</button>
-        <button class="chip chipDanger" id="resetAll">Reset</button>
-      </div>
-    </header>
-
-    <div class="shell">
-      <aside class="nav" id="nav">
-        <div class="navInner">
-          <div class="card stats">
-            <div class="statRow">
-              <div class="stat">
-                <div class="statLabel" data-i18n="progress">Progress</div>
-                <div class="statValue" id="progressValue">0/30</div>
-              </div>
-              <div class="stat">
-                <div class="statLabel" data-i18n="streak">Streak</div>
-                <div class="statValue" id="streakValue">0</div>
-              </div>
-            </div>
-            <div class="barWrap"><div class="bar" id="progressBar"></div></div>
-            <div class="statHint" id="startedOnText"></div>
-          </div>
-
-          <div class="navSection">
-            <div class="navTitle" data-i18n="modules">Modules</div>
-            <div id="moduleList" class="moduleList"></div>
-          </div>
-
-          <div class="navSection">
-            <div class="navTitle" data-i18n="days">Days</div>
-            <div id="dayList" class="dayList"></div>
-          </div>
-
-          <div class="hintCard">
-            <div class="hintTitle" data-i18n="mentorTipTitle">Mentor tip</div>
-            <div class="hintBody" data-i18n="mentorTipBody">Don’t rush. One small win per day is enough.</div>
-          </div>
-        </div>
-      </aside>
-
-      <main class="main">
-        <div class="hero card">
-          <div class="heroLeft">
-            <div class="kicker" id="dayKicker">Day</div>
-            <h1 class="heroTitle" id="dayTitle">Day 1</h1>
-            <div class="heroMeta" id="dayMeta"></div>
-          </div>
-          <div class="heroRight">
-            <button class="primary" id="markDone">✅ <span data-i18n="markDone">Mark done</span></button>
-          </div>
-        </div>
-
-        <div class="tabs card">
-          <div class="tabBar" role="tablist" aria-label="Lesson tabs">
-            <button class="tab active" data-tab="learn" role="tab" aria-selected="true" data-i18n="tabLearn">Learn</button>
-            <button class="tab" data-tab="practice" role="tab" aria-selected="false" data-i18n="tabPractice">Practice</button>
-            <button class="tab" data-tab="quiz" role="tab" aria-selected="false" data-i18n="tabQuiz">Quiz</button>
-            <button class="tab" data-tab="notes" role="tab" aria-selected="false" data-i18n="tabNotes">Notes</button>
-          </div>
-
-          <section class="tabPanel active" id="tab-learn" role="tabpanel">
-            <div class="panelTitle" data-i18n="concept">Concept</div>
-            <div id="concept" class="markdown"></div>
-
-            <div class="panelTitle" data-i18n="homework">Homework</div>
-            <div id="homework"></div>
-          </section>
-
-          <section class="tabPanel" id="tab-practice" role="tabpanel">
-            <div class="panelTitle" data-i18n="tryIt">Try it (run Python)</div>
-            <div class="editor">
-              <div class="editorTop">
-                <div class="status" id="pyStatus">⏳ Loading Python…</div>
-                <div class="editorBtns">
-                  <button class="btn" id="resetCode">↩️ <span data-i18n="resetCode">Reset code</span></button>
-                  <button class="btn" id="copyCode">📋 <span data-i18n="copy">Copy</span></button>
-                </div>
-              </div>
-              <textarea id="code" spellcheck="false" aria-label="Python code"></textarea>
-              <div class="runRow">
-                <button class="primary" id="run">▶️ <span data-i18n="run">Run</span></button>
-                <div class="small" data-i18n="output">Output</div>
-              </div>
-              <pre id="output" class="output" aria-label="Program output"></pre>
-              <div class="small muted" data-i18n="practiceHint">Tip: change the code and run again. Errors are normal.</div>
-            </div>
-          </section>
-
-          <section class="tabPanel" id="tab-quiz" role="tabpanel">
-            <div class="panelTitle" data-i18n="quiz">Quiz</div>
-            <div id="quiz"></div>
-          </section>
-
-          <section class="tabPanel" id="tab-notes" role="tabpanel">
-            <div class="panelTitle" data-i18n="notes">Notes</div>
-            <textarea id="notes" class="notes" placeholder="Write your notes here..."></textarea>
-            <div class="small muted" data-i18n="notesHint">Your notes are saved on this device.</div>
-          </section>
-        </div>
-
-        <footer class="footer">
-          <div class="small muted" data-i18n="footer1">Upload this folder to GitHub Pages to learn anywhere.</div>
-          <div class="small muted" data-i18n="footer2">Progress is stored locally in your browser.</div>
-        </footer>
-      </main>
     </div>
-  </div>
+
+    <div class="actions">
+      <button class="pill" id="startToday">📅 <span data-i18n="startToday">Start today</span></button>
+      <button class="pill" id="goToday">🎯 <span data-i18n="today">Today</span></button>
+      <label class="pill" for="lang">🌐
+        <select id="lang" aria-label="Language">
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+        </select>
+      </label>
+      <button class="pill danger" id="resetAll">♻️ <span data-i18n="reset">Reset</span></button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="dash">
+        <div class="dashRow">
+          <div class="dashItem">
+            <div class="dashLabel" data-i18n="progress">Progress</div>
+            <div class="dashValue" id="progressValue">0/30</div>
+          </div>
+          <div class="dashItem">
+            <div class="dashLabel" data-i18n="streak">Streak</div>
+            <div class="dashValue" id="streakValue">0</div>
+          </div>
+        </div>
+        <div class="barWrap"><div class="bar" id="progressBar"></div></div>
+        <div class="small" id="startedOnText"></div>
+      </div>
+
+      <div class="navHeader"><h2 data-i18n="modules">Modules</h2></div>
+      <div id="moduleList" class="moduleList"></div>
+
+      <div class="navHeader"><h2 data-i18n="days">Days</h2></div>
+      <div id="dayList" class="dayList"></div>
+
+      <div class="tip">
+        <div class="tipTitle" data-i18n="mentorTipTitle">Mentor tip</div>
+        <div class="tipBody" data-i18n="mentorTipBody">Don’t rush. One small win per day is enough.</div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="card">
+        <div class="cardHeader">
+          <div>
+            <h1 id="dayTitle">Day</h1>
+            <div class="meta" id="dayMeta"></div>
+          </div>
+          <button id="markDone" class="doneBtn">✅ <span data-i18n="markDone">Mark done</span></button>
+        </div>
+
+        <div class="cardBody">
+          <div class="sectionTitle" data-i18n="concept">Concept</div>
+          <div id="concept" class="markdown"></div>
+
+          <div class="split">
+            <div>
+              <div class="sectionTitle" data-i18n="tryIt">Try it (run Python)</div>
+              <textarea id="code" spellcheck="false"></textarea>
+              <div class="runRow">
+                <button id="run" class="runBtn">▶️ <span data-i18n="run">Run</span></button>
+                <div id="pyStatus" class="status">⏳ Loading Python…</div>
+                <button id="resetCode" class="miniBtn">↩️ <span data-i18n="resetCode">Reset code</span></button>
+                <button id="copyCode" class="miniBtn">📋 <span data-i18n="copy">Copy</span></button>
+              </div>
+              <div class="sectionTitle" data-i18n="output">Output</div>
+              <pre id="output"></pre>
+            </div>
+
+            <div>
+              <div class="sectionTitle" data-i18n="homework">Homework</div>
+              <div id="homework"></div>
+
+              <div class="sectionTitle" data-i18n="quiz">Quiz</div>
+              <div id="quiz"></div>
+
+              <div class="sectionTitle" data-i18n="notes">Notes</div>
+              <textarea id="notes" class="notes" placeholder="Write your notes here..."></textarea>
+              <div class="small" data-i18n="notesHint">Your notes are saved on this device.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer small">
+        <span data-i18n="footer1">Upload this folder to GitHub Pages to learn anywhere.</span>
+        <span>·</span>
+        <span data-i18n="footer2">Progress is stored locally in your browser.</span>
+      </footer>
+    </section>
+  </main>
 </body>
 </html>
